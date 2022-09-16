@@ -2,7 +2,8 @@
 *
 # You can whitelist files/folders with !, these will not be ignored.
 !*.yaml
+!*.yml
 !.gitignore
 !*.md
-!./config/letsencrypt/.donoteditthisfile.conf
-!./config/letsencrypt/nginx/proxy-confs/*.conf
+!config/letsencrypt/.donoteditthisfile.conf
+!config/letsencrypt/nginx/proxy-confs/*.conf

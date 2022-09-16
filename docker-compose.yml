@@ -1,0 +1,23 @@
+---
+ 
+version: '3'
+services:
+  letsencrypt:
+    image: linuxserver/swag
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./config/letsencrypt:/config
+    environment:
+      - TZ=Europe/Bucharest
+      - PUID=1000
+      - PGID=1000
+      - EMAIL=alexica@proton.me
+      - URL=alexica.ro
+      - SUBDOMAINS=wildcard
+      - VALIDATION=dns
+      - DNSPLUGIN=digitalocean
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped

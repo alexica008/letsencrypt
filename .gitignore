@@ -5,6 +5,6 @@
 !*.yml
 !.gitignore
 !*.md
-!*.conf
+!config/letsencrypt/.donoteditthisfile.conf
 #!config/letsencrypt/.donoteditthisfile.conf
 #!config/letsencrypt/nginx/proxy-confs/*.conf

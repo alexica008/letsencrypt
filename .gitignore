@@ -10,6 +10,9 @@ config/*
 !config/letsencrypt/
 config/letsencrypt/*
 !config/letsencrypt/.donoteditthisfile.conf
+!config/letsencrypt/nginx/
+config/letsencrypt/nginx/*
+!config/letsencrypt/nginx/proxy-confs
 config/letsencrypt/nginx/proxy-confs/*
 !config/letsencrypt/nginx/proxy-confs/*.conf
 
